@@ -15000,18 +15000,28 @@ same route.</xsd:documentation>
          </v12:Fields>\r
       </v11:GetCustomerBillLineItemListVBMRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://group.vodafone.com/contract/vbs/payment/customer-bill-lineitem/v1/get-list"/></con:call></con:operation><con:operation id="18887972-dca1-4a4e-8b20-a94710a97941" isOneWay="false" action="http://group.vodafone.com/contract/vbs/payment/customer-bill/v1/get-list" name="GetCustomerBillList" bindingOperationName="GetCustomerBillList" type="Request-Response" outputName="GetCustomerBillListResponse" inputName="GetCustomerBillListRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2df81a8a-71f4-4142-a651-bff8b7b416c3" name="Request 2" useWsAddressing="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/CustomerBillList</con:endpoint><con:request><![CDATA[<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://group.vodafone.com/contract/vbs/payment/customer-bill-lineitem/v1/get-list"/></con:call></con:operation><con:operation id="18887972-dca1-4a4e-8b20-a94710a97941" isOneWay="false" action="http://group.vodafone.com/contract/vbs/payment/customer-bill/v1/get-list" name="GetCustomerBillList" bindingOperationName="GetCustomerBillList" type="Request-Response" outputName="GetCustomerBillListResponse" inputName="GetCustomerBillListRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2df81a8a-71f4-4142-a651-bff8b7b416c3" name="Request 2" useWsAddressing="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8089/CustomerBillList</con:endpoint><con:request><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP-ENV:Header />
    <SOAP-ENV:Body>
-      <ns6:GetCustomerBillListVBMRequest xmlns:ns6="http://group.vodafone.com/schema/vbm/payment/customer-bill/v1" xmlns:ns10="http://docs.oasis-open.org/wsrf/bf-2" xmlns:ns2="http://group.vodafone.com/schema/common/v1" xmlns:ns3="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1" xmlns:ns4="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2" xmlns:ns5="http://group.vodafone.com/schema/extension/vbo/payment/customer-bill/v1" xmlns:ns7="http://group.vodafone.com/contract/vho/header/v1" xmlns:ns8="http://group.vodafone.com/contract/vfo/fault/v1" xmlns:ns9="http://www.w3.org/2005/08/addressing">
-         <ns2:Criteria>
-            <ns2:QueryExpression>
-               <ns2:ValueExpression Path="/CustomerBillVBO/Parts/BillingAccount/IDs/ID" QueryOperatorCode="EQUALS">
-                  <ns2:Value>5454</ns2:Value>
-               </ns2:ValueExpression>           
-            </ns2:QueryExpression>
-         </ns2:Criteria>
-      </ns6:GetCustomerBillListVBMRequest>
+      <ns7:GetCustomerBillListVBMRequest xmlns:ns7="http://group.vodafone.com/schema/vbm/payment/customer-bill/v1" xmlns:ns10="http://group.vodafone.com/contract/vfo/fault/v1" xmlns:ns2="http://www.w3.org/2005/08/addressing" xmlns:ns3="http://group.vodafone.com/schema/common/v1" xmlns:ns4="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1" xmlns:ns5="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2" xmlns:ns6="http://group.vodafone.com/schema/extension/vbo/payment/customer-bill/v1" xmlns:ns8="http://group.vodafone.com/contract/vho/header/v1" xmlns:ns9="http://docs.oasis-open.org/wsrf/bf-2">
+         <ns3:Criteria>
+            <ns3:QueryExpression>
+               <ns3:ValueExpression Path="/CustomerBillVBO/Parts/BillingAccount/IDs/ID" QueryOperatorCode="EQUALS">
+                  <ns3:Value>12234</ns3:Value>
+               </ns3:ValueExpression>
+               <ns3:ValueExpression Path="/CustomerBillVBO/Categories/Category/@listName=HistoryBillFlag" QueryOperatorCode="EQUALS">
+                  <ns3:Value>X</ns3:Value>
+               </ns3:ValueExpression>
+               <ns3:ValueExpression Path="/CustomerBillVBO/Parts/BillingCycle/BillingPeriod/StartDateTime" QueryOperatorCode="EQUALS">
+                  <ns3:Value>14/09/2017</ns3:Value>
+               </ns3:ValueExpression>
+               <ns3:ValueExpression Path="/CustomerBillVBO/Parts/BillingCycle/BillingPeriod/EndDateTime" QueryOperatorCode="EQUALS">
+                  <ns3:Value>13/03/2018</ns3:Value>
+               </ns3:ValueExpression>
+            </ns3:QueryExpression>
+         </ns3:Criteria>
+      </ns7:GetCustomerBillListVBMRequest>
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://group.vodafone.com/contract/vbs/payment/customer-bill/v1/get-list"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d12b115f-d886-4dea-97a4-397d80ba10ca" isOneWay="false" action="http://group.vodafone.com/contract/vbs/payment/customer-bill-summary/v1/get-list" name="GetCustomerBillSummaryList" bindingOperationName="GetCustomerBillSummaryList" type="Request-Response" outputName="GetCustomerBillSummaryListResponse" inputName="GetCustomerBillSummaryListRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6c573c96-dac9-4e85-bd01-6993476c6911" name="Request 1" useWsAddressing="true"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://example.com:8080/PS_CustomerBill</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://group.vodafone.com/contract/vho/header/v1" xmlns:v11="http://group.vodafone.com/schema/vbm/payment/customer-bill/v1" xmlns:v12="http://group.vodafone.com/schema/common/v1">\r
    <soapenv:Header>\r
@@ -16037,7 +16047,11 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=BillingAccountFlag")
 	if(map.get("/CustomerBillVBO/Categories/Category/@listName=TransactionFlag") != null){
 		return "currentBalanceWithPayment"
 	} else {
-	return "currentBalance"
+		if(BA =="5678") {
+			return "singleCurrentBalance"
+		} else {
+			return "multipleCurrentBalance"
+		}
 	}
 }
 
@@ -16050,7 +16064,7 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
 } else {
 	if (map.get("/CustomerBillVBO/Parts/Subscriptions/Subscription/IDs/ID") != null){
 		return "childBillHistory"
-	} else if(BA == "05134499") {
+	} else if(BA == "5678") {
 		return "singleBillHistory"
 	} else {
 		return "multipleBillHistory"
@@ -16178,7 +16192,7 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
          </v1:CustomerBillVBO>
       </v1:GetCustomerBillListVBMResponse>
    </soap:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://group.vodafone.com/contract/vbs/payment/customer-bill/v1/get-list"/></con:response><con:response name="currentBalance" id="e0db909b-f29b-4cc4-8a90-902077f8bb23" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://group.vodafone.com/contract/vbs/payment/customer-bill/v1/get-list"/></con:response><con:response name="singleCurrentBalance" id="e0db909b-f29b-4cc4-8a90-902077f8bb23" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
    <SOAP:Header xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/"/>
    <SOAP:Body xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
       <v1:GetCustomerBillListVBMResponse xmlns:v1="http://group.vodafone.com/schema/vbm/payment/customer-bill/v1">
@@ -16198,7 +16212,7 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
                </v11:AmountsDue>
                <v11:BillingAccount>
                   <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                     <v12:ID>8838195</v12:ID>
+                     <v12:ID>5678</v12:ID>
                   </v12:IDs>
                </v11:BillingAccount>
                <v11:BillingCycle>
@@ -16257,23 +16271,23 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
       <v1:GetCustomerBillListVBMResponse xmlns:v1="http://group.vodafone.com/schema/vbm/payment/customer-bill/v1">
          <v1:CustomerBillVBO>
             <v11:IDs xmlns:v11="http://group.vodafone.com/schema/common/v1">
-               <v11:ID>614.76</v11:ID>
+               <v11:ID>730.98</v11:ID>
             </v11:IDs>
             <v11:Details xmlns:v11="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1">
                <v11:DueDateTime/>
-               <v11:LastBilledAmount>201.92</v11:LastBilledAmount>
-               <v11:LastOverdueAmount>412.84</v11:LastOverdueAmount>
+               <v11:LastBilledAmount>381.83</v11:LastBilledAmount>
+               <v11:LastOverdueAmount>349.15</v11:LastOverdueAmount>
             </v11:Details>
             <v11:Parts xmlns:v11="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1">
                <v11:AmountsDue>
-                  <v11:Amount>614.76</v11:Amount>
-                  <v11:NetAmount>139.53</v11:NetAmount>
-                  <v11:DisputeAmount>6.06</v11:DisputeAmount>
-                  <v11:WrittenOffAmount>17.25</v11:WrittenOffAmount>
+                  <v11:Amount>730.98</v11:Amount>
+                  <v11:NetAmount>179.58</v11:NetAmount>
+                  <v11:DisputeAmount>92.49</v11:DisputeAmount>
+                  <v11:WrittenOffAmount>35.86</v11:WrittenOffAmount>
                </v11:AmountsDue>
                <v11:BillingAccount>
                   <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                     <v12:ID>0204889</v12:ID>
+                     <v12:ID>05134499</v12:ID>
                   </v12:IDs>
                </v11:BillingAccount>
                <v11:BillingCycle>
@@ -16289,7 +16303,7 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
                   <v11:Document>
                      <v12:Reference xmlns:v12="http://group.vodafone.com/schema/common/v1">
                         <v12:IDs>
-                           <v12:ID>id=YmE9MDIwNDg4OThfaXNzdWVEYXRlPTIwMTgtMDMtMTU</v12:ID>
+                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTU</v12:ID>
                         </v12:IDs>
                      </v12:Reference>
                   </v11:Document>
@@ -16297,26 +16311,26 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
                <v11:LineItems>
                   <v11:LineItem>
                      <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:ID>6944315215</v12:ID>
+                        <v12:ID>6943102804</v12:ID>
                      </v12:IDs>
-                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MYAL</v12:Name>
+                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">GPDAT</v12:Name>
                      <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:Category name="MonthlyFee">40.55</v12:Category>
+                        <v12:Category name="MonthlyFee">0.00</v12:Category>
                         <v12:Category name="OutOfBundleUsage">0.00</v12:Category>
-                        <v12:Category name="OtherDiscounts">4.87</v12:Category>
+                        <v12:Category name="OtherDiscounts">0.00</v12:Category>
                      </v12:Categories>
                      <v11:ChargeDate>
                         <urn:DateString xmlns:urn="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2">14/03/2018</urn:DateString>
                      </v11:ChargeDate>
                      <v11:FinancialCharge>
-                        <v11:Amount>56.32</v11:Amount>
+                        <v11:Amount>0.00</v11:Amount>
                      </v11:FinancialCharge>
                      <v11:ServiceUsage>
                         <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:ID>id=YmE9MDIwNDg4OThfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDQzMTUyMTU</v12:ID>
+                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDMxMDI4MDQ</v12:ID>
                         </v12:IDs>
                         <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">10.90</v12:Category>
+                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">0.00</v12:Category>
                         </v12:Categories>
                         <v11:TimePeriod>
                            <v12:StartDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">14/02/2018</v12:StartDateTime>
@@ -16326,26 +16340,26 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
                   </v11:LineItem>
                   <v11:LineItem>
                      <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:ID>6944690730</v12:ID>
+                        <v12:ID>6944326111</v12:ID>
                      </v12:IDs>
-                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MYAL</v12:Name>
+                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MY50P</v12:Name>
                      <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:Category name="MonthlyFee">38.36</v12:Category>
-                        <v12:Category name="OutOfBundleUsage">0.00</v12:Category>
-                        <v12:Category name="OtherDiscounts">4.60</v12:Category>
+                        <v12:Category name="MonthlyFee">44.13</v12:Category>
+                        <v12:Category name="OutOfBundleUsage">31.20</v12:Category>
+                        <v12:Category name="OtherDiscounts">9.47</v12:Category>
                      </v12:Categories>
                      <v11:ChargeDate>
                         <urn:DateString xmlns:urn="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2">14/03/2018</urn:DateString>
                      </v11:ChargeDate>
                      <v11:FinancialCharge>
-                        <v11:Amount>53.27</v11:Amount>
+                        <v11:Amount>105.15</v11:Amount>
                      </v11:FinancialCharge>
                      <v11:ServiceUsage>
                         <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:ID>id=YmE9MDIwNDg4OThfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDQ2OTA3MzA</v12:ID>
+                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDQzMjYxMTE</v12:ID>
                         </v12:IDs>
                         <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">10.31</v12:Category>
+                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">20.35</v12:Category>
                         </v12:Categories>
                         <v11:TimePeriod>
                            <v12:StartDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">14/02/2018</v12:StartDateTime>
@@ -16507,38 +16521,40 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
                         </v11:TimePeriod>
                      </v11:ServiceUsage>
                   </v11:LineItem>
-                  <v11:LineItem>
-                     <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:ID>6944326111</v12:ID>
-                     </v12:IDs>
-                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MY50P</v12:Name>
-                     <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:Category name="MonthlyFee">44.13</v12:Category>
-                        <v12:Category name="OutOfBundleUsage">31.20</v12:Category>
-                        <v12:Category name="OtherDiscounts">9.47</v12:Category>
-                     </v12:Categories>
-                     <v11:ChargeDate>
-                        <urn:DateString xmlns:urn="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2">14/03/2018</urn:DateString>
-                     </v11:ChargeDate>
-                     <v11:FinancialCharge>
-                        <v11:Amount>105.15</v11:Amount>
-                     </v11:FinancialCharge>
-                     <v11:ServiceUsage>
-                        <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDQzMjYxMTE</v12:ID>
-                        </v12:IDs>
-                        <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">20.35</v12:Category>
-                        </v12:Categories>
-                        <v11:TimePeriod>
-                           <v12:StartDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">14/02/2018</v12:StartDateTime>
-                           <v12:EndDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">13/03/2018</v12:EndDateTime>
-                        </v11:TimePeriod>
-                     </v11:ServiceUsage>
-                  </v11:LineItem>
                </v11:LineItems>
             </v11:Parts>
          </v1:CustomerBillVBO>
       </v1:GetCustomerBillListVBMResponse>
    </soap:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://group.vodafone.com/contract/vbs/payment/customer-bill/v1/get-list"/></con:response><con:response name="multipleCurrentBalance" id="9fff8329-92b0-4458-bc1b-b822b416c930" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Header xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/"/>
+   <SOAP:Body xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+      <v1:GetCustomerBillListVBMResponse xmlns:v1="http://group.vodafone.com/schema/vbm/payment/customer-bill/v1">
+         <v1:CustomerBillVBO>
+            <v11:Categories xmlns:v11="http://group.vodafone.com/schema/common/v1">
+               <v11:Category name="BalanceAmount">0</v11:Category>
+            </v11:Categories>
+            <v11:Details xmlns:v11="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1">
+               <v11:DueDateTime>2017-11-30</v11:DueDateTime>
+               <v11:ChargeDateTime>2018-03-20</v11:ChargeDateTime>
+               <v11:LastBilledAmount>49.60</v11:LastBilledAmount>
+               <v11:LastOverdueAmount>320.50</v11:LastOverdueAmount>
+            </v11:Details>
+            <v11:Parts xmlns:v11="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1">
+               <v11:AmountsDue>
+                  <v11:Amount>320.50</v11:Amount>
+               </v11:AmountsDue>
+               <v11:BillingAccount>
+                  <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
+                     <v12:ID>1234</v12:ID>
+                  </v12:IDs>
+               </v11:BillingAccount>
+               <v11:BillingCycle>
+                  <v11:BillingDateTime>2017-11-03</v11:BillingDateTime>
+                  <v11:CycleCloseDateTime/>
+               </v11:BillingCycle>
+            </v11:Parts>
+         </v1:CustomerBillVBO>
+      </v1:GetCustomerBillListVBMResponse>
+   </SOAP:Body>
 </soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://group.vodafone.com/contract/vbs/payment/customer-bill/v1/get-list"/></con:response><con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
