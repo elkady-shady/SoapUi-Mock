@@ -16275,30 +16275,27 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
       <v1:GetCustomerBillListVBMResponse xmlns:v1="http://group.vodafone.com/schema/vbm/payment/customer-bill/v1">
          <v1:CustomerBillVBO>
             <v11:IDs xmlns:v11="http://group.vodafone.com/schema/common/v1">
-               <v11:ID>730.98</v11:ID>
+               <v11:ID>614.76</v11:ID>
             </v11:IDs>
             <v11:Details xmlns:v11="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1">
                <v11:DueDateTime/>
-               <v11:LastBilledAmount>381.83</v11:LastBilledAmount>
-               <v11:LastOverdueAmount>349.15</v11:LastOverdueAmount>
-               <v11:AverageBilledAmount>
-                  <v11:Amount>179.58</v11:Amount>
-               </v11:AverageBilledAmount>
+               <v11:LastBilledAmount>201.92</v11:LastBilledAmount>
+               <v11:LastOverdueAmount>412.84</v11:LastOverdueAmount>
             </v11:Details>
             <v11:Parts xmlns:v11="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1">
                <v11:AmountsDue>
-                  <v11:Amount>730.98</v11:Amount>
-                  <v11:NetAmount>179.58</v11:NetAmount>
-                  <v11:DisputeAmount>92.49</v11:DisputeAmount>
-                  <v11:WrittenOffAmount>35.86</v11:WrittenOffAmount>
+                  <v11:Amount>614.76</v11:Amount>
+                  <v11:NetAmount>139.53</v11:NetAmount>
+                  <v11:DisputeAmount>6.06</v11:DisputeAmount>
+                  <v11:WrittenOffAmount>17.25</v11:WrittenOffAmount>
                </v11:AmountsDue>
                <v11:BillingAccount>
                   <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                     <v12:ID>05134499</v12:ID>
+                     <v12:ID>0204889</v12:ID>
                   </v12:IDs>
                </v11:BillingAccount>
                <v11:BillingCycle>
-                  <v11:BillingDateTime>05/03/2018</v11:BillingDateTime>
+                  <v11:BillingDateTime/>
                   <v11:BillingPeriod>
                      <v12:StartDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">14/02/2018</v12:StartDateTime>
                      <v12:EndDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">13/03/2018</v12:EndDateTime>
@@ -16310,7 +16307,7 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
                   <v11:Document>
                      <v12:Reference xmlns:v12="http://group.vodafone.com/schema/common/v1">
                         <v12:IDs>
-                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTU</v12:ID>
+                           <v12:ID>id=YmE9MDIwNDg4OThfaXNzdWVEYXRlPTIwMTgtMDMtMTU</v12:ID>
                         </v12:IDs>
                      </v12:Reference>
                   </v11:Document>
@@ -16318,26 +16315,26 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
                <v11:LineItems>
                   <v11:LineItem>
                      <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:ID>6943102804</v12:ID>
+                        <v12:ID>6944315215</v12:ID>
                      </v12:IDs>
-                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">GPDAT</v12:Name>
+                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MYAL</v12:Name>
                      <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:Category name="MonthlyFee">0.00</v12:Category>
+                        <v12:Category name="MonthlyFee">40.55</v12:Category>
                         <v12:Category name="OutOfBundleUsage">0.00</v12:Category>
-                        <v12:Category name="OtherDiscounts">0.00</v12:Category>
+                        <v12:Category name="OtherDiscounts">4.87</v12:Category>
                      </v12:Categories>
                      <v11:ChargeDate>
                         <urn:DateString xmlns:urn="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2">14/03/2018</urn:DateString>
                      </v11:ChargeDate>
                      <v11:FinancialCharge>
-                        <v11:Amount>0.00</v11:Amount>
+                        <v11:Amount>56.32</v11:Amount>
                      </v11:FinancialCharge>
                      <v11:ServiceUsage>
                         <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDMxMDI4MDQ</v12:ID>
+                           <v12:ID>id=YmE9MDIwNDg4OThfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDQzMTUyMTU</v12:ID>
                         </v12:IDs>
                         <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">0.00</v12:Category>
+                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">10.90</v12:Category>
                         </v12:Categories>
                         <v11:TimePeriod>
                            <v12:StartDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">14/02/2018</v12:StartDateTime>
@@ -16347,26 +16344,26 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
                   </v11:LineItem>
                   <v11:LineItem>
                      <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:ID>6944326111</v12:ID>
+                        <v12:ID>6944690730</v12:ID>
                      </v12:IDs>
-                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MY50P</v12:Name>
+                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MYAL</v12:Name>
                      <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:Category name="MonthlyFee">44.13</v12:Category>
-                        <v12:Category name="OutOfBundleUsage">31.20</v12:Category>
-                        <v12:Category name="OtherDiscounts">9.47</v12:Category>
+                        <v12:Category name="MonthlyFee">38.36</v12:Category>
+                        <v12:Category name="OutOfBundleUsage">0.00</v12:Category>
+                        <v12:Category name="OtherDiscounts">4.60</v12:Category>
                      </v12:Categories>
                      <v11:ChargeDate>
                         <urn:DateString xmlns:urn="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2">14/03/2018</urn:DateString>
                      </v11:ChargeDate>
                      <v11:FinancialCharge>
-                        <v11:Amount>105.15</v11:Amount>
+                        <v11:Amount>53.27</v11:Amount>
                      </v11:FinancialCharge>
                      <v11:ServiceUsage>
                         <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDQzMjYxMTE</v12:ID>
+                           <v12:ID>id=YmE9MDIwNDg4OThfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDQ2OTA3MzA</v12:ID>
                         </v12:IDs>
                         <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">20.35</v12:Category>
+                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">10.31</v12:Category>
                         </v12:Categories>
                         <v11:TimePeriod>
                            <v12:StartDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">14/02/2018</v12:StartDateTime>
@@ -16375,110 +16372,34 @@ if (map.get("/CustomerBillVBO/Categories/Category/@listName=CurrentBillFlag") !=
                      </v11:ServiceUsage>
                   </v11:LineItem>
                </v11:LineItems>
-            </v11:Parts>
-         </v1:CustomerBillVBO>
-         <v1:CustomerBillVBO>
-            <v11:IDs xmlns:v11="http://group.vodafone.com/schema/common/v1">
-               <v11:ID>730.98</v11:ID>
-            </v11:IDs>
-            <v11:Details xmlns:v11="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1">
-               <v11:DueDateTime/>
-               <v11:LastBilledAmount>381.83</v11:LastBilledAmount>
-               <v11:LastOverdueAmount>349.15</v11:LastOverdueAmount>
-               <v11:AverageBilledAmount>
-                  <v11:Amount>179.58</v11:Amount>
-               </v11:AverageBilledAmount>
-            </v11:Details>
-            <v11:Parts xmlns:v11="http://group.vodafone.com/schema/vbo/payment/customer-bill/v1">
-               <v11:AmountsDue>
-                  <v11:Amount>730.98</v11:Amount>
-                  <v11:NetAmount>179.58</v11:NetAmount>
-                  <v11:DisputeAmount>92.49</v11:DisputeAmount>
-                  <v11:WrittenOffAmount>35.86</v11:WrittenOffAmount>
-               </v11:AmountsDue>
-               <v11:BillingAccount>
-                  <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                     <v12:ID>05134499</v12:ID>
-                  </v12:IDs>
-               </v11:BillingAccount>
-               <v11:BillingCycle>
-                  <v11:BillingDateTime>05/04/2018</v11:BillingDateTime>
-                  <v11:BillingPeriod>
-                     <v12:StartDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">14/02/2018</v12:StartDateTime>
-                     <v12:EndDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">13/03/2018</v12:EndDateTime>
-                  </v11:BillingPeriod>
-                  <v11:ChargeDateTime>14/03/2018</v11:ChargeDateTime>
-                  <v11:CycleCloseDateTime/>
-               </v11:BillingCycle>
-               <v11:Documents>
-                  <v11:Document>
-                     <v12:Reference xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:IDs>
-                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTU</v12:ID>
-                        </v12:IDs>
-                     </v12:Reference>
-                  </v11:Document>
-               </v11:Documents>
-               <v11:LineItems>
-                  <v11:LineItem>
+               <v11:Subscriptions>
+                  <v11:Subscription>
                      <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:ID>6943102804</v12:ID>
+                        <v12:ID>6944315215</v12:ID> 
                      </v12:IDs>
-                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">GPDAT</v12:Name>
-                     <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:Category name="MonthlyFee">0.00</v12:Category>
-                        <v12:Category name="OutOfBundleUsage">0.00</v12:Category>
-                        <v12:Category name="OtherDiscounts">0.00</v12:Category>
-                     </v12:Categories>
-                     <v11:ChargeDate>
-                        <urn:DateString xmlns:urn="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2">14/03/2018</urn:DateString>
-                     </v11:ChargeDate>
-                     <v11:FinancialCharge>
-                        <v11:Amount>0.00</v11:Amount>
-                     </v11:FinancialCharge>
-                     <v11:ServiceUsage>
-                        <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDMxMDI4MDQ</v12:ID>
-                        </v12:IDs>
-                        <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">0.00</v12:Category>
-                        </v12:Categories>
-                        <v11:TimePeriod>
-                           <v12:StartDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">14/02/2018</v12:StartDateTime>
-                           <v12:EndDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">13/03/2018</v12:EndDateTime>
-                        </v11:TimePeriod>
-                     </v11:ServiceUsage>
-                  </v11:LineItem>
-                  <v11:LineItem>
+                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MYAL</v12:Name>
+                     <v11:Extension>
+                        <MonthlyFee>40.55</MonthlyFee>
+                        <OutOfPlanCharge>0.00</OutOfPlanCharge>
+                        <TotalCharge>56.32</TotalCharge>
+                        <TotalDiscount>4.87</TotalDiscount>
+                        <TotalTaxes>10.90</TotalTaxes>
+                    </v11:Extension>
+                  </v11:Subscription>
+                   <v11:Subscription>
                      <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:ID>6944326111</v12:ID>
+                        <v12:ID>6944690730</v12:ID> 
                      </v12:IDs>
-                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MY50P</v12:Name>
-                     <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                        <v12:Category name="MonthlyFee">44.13</v12:Category>
-                        <v12:Category name="OutOfBundleUsage">31.20</v12:Category>
-                        <v12:Category name="OtherDiscounts">9.47</v12:Category>
-                     </v12:Categories>
-                     <v11:ChargeDate>
-                        <urn:DateString xmlns:urn="urn:un:unece:uncefact:documentation:standard:CoreComponentType:2">14/03/2018</urn:DateString>
-                     </v11:ChargeDate>
-                     <v11:FinancialCharge>
-                        <v11:Amount>105.15</v11:Amount>
-                     </v11:FinancialCharge>
-                     <v11:ServiceUsage>
-                        <v12:IDs xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:ID>id=YmE9MDUxMzQ0OTlfaXNzdWVEYXRlPTIwMTgtMDMtMTVfbXNpc2RuPTY5NDQzMjYxMTE</v12:ID>
-                        </v12:IDs>
-                        <v12:Categories xmlns:v12="http://group.vodafone.com/schema/common/v1">
-                           <v12:Category listID="24" listName="Φ.Π.Α." name="amount">20.35</v12:Category>
-                        </v12:Categories>
-                        <v11:TimePeriod>
-                           <v12:StartDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">14/02/2018</v12:StartDateTime>
-                           <v12:EndDateTime xmlns:v12="http://group.vodafone.com/schema/common/v1">13/03/2018</v12:EndDateTime>
-                        </v11:TimePeriod>
-                     </v11:ServiceUsage>
-                  </v11:LineItem>
-               </v11:LineItems>
+                     <v12:Name xmlns:v12="http://group.vodafone.com/schema/common/v1">MYAL</v12:Name>
+                     <v11:Extension>
+                        <MonthlyFee>38.36</MonthlyFee>
+                        <OutOfPlanCharge>0.00</OutOfPlanCharge>
+                        <TotalCharge>53.27</TotalCharge>
+                        <TotalDiscount>4.60</TotalDiscount>
+                        <TotalTaxes>10.31</TotalTaxes>
+                     </v11:Extension>
+                   </v11:Subscription> 
+               </v11:Subscriptions>
             </v11:Parts>
          </v1:CustomerBillVBO>
       </v1:GetCustomerBillListVBMResponse>
